@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Clicks – AI Automation for UK Businesses | WhatsApp Chatbots & Business Automation</title>
+  <meta name="description" content="Transform your Greenwich business with AI automation. WhatsApp chatbots, customer service automation, and workflow solutions. Save 10+ hours per week. Book a free demo." />
+  <meta name="keywords" content="AI automation UK, WhatsApp chatbot, business automation Greenwich, n8n automation, customer service automation, restaurant automation" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Data Clicks – AI Automation for UK Businesses" />
+  <meta property="og:description" content="WhatsApp chatbots, customer service automation, and workflow solutions. Save 10+ hours per week. Book a free demo." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://data-clicks.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary:#667eea; --primary-dark:#5568d3; --secondary:#764ba2; --accent:#10b981; --dark:#0b1220; --light:#f8f9fa; --text:#333; --text-light:#666;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif; line-height:1.6; color:var(--text); overflow-x:hidden; background:#fff; }
+
+    /* Header */
+    header { position:fixed; top:0; left:0; right:0; background:rgba(255,255,255,.95); backdrop-filter:blur(10px); box-shadow:0 2px 20px rgba(0,0,0,.08); z-index:1000; transition:all .3s; }
+    nav { max-width:1200px; margin:0 auto; padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center; }
+    .logo { font-size:1.5rem; font-weight:800; letter-spacing:.5px; background:linear-gradient(135deg,var(--primary),var(--secondary)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a { color:var(--text); text-decoration:none; font-weight:600; }
+    .nav-links a:hover { color:var(--primary); }
+    .cta-btn { background:linear-gradient(135deg,var(--primary),var(--secondary)); color:#fff; padding:.75rem 1.25rem; border-radius:999px; text-decoration:none; font-weight:700; border:none; cursor:pointer; box-shadow:0 8px 20px rgba(102,126,234,.25); }
+    .cta-btn:hover { transform:translateY(-2px); box-shadow:0 12px 28px rgba(102,126,234,.35); }
+
+    /* Mobile nav */
+    .burger { display:none; width:42px; height:42px; border-radius:10px; border:1px solid #e5e7eb; align-items:center; justify-content:center; background:#fff; }
+    .burger span { display:block; width:20px; height:2px; background:#111; position:relative; }
+    .burger span::before, .burger span::after { content:""; position:absolute; left:0; width:20px; height:2px; background:#111; }
+    .burger span::before { top:-6px; }
+    .burger span::after { top:6px; }
+
+    /* Hero */
+    .hero { margin-top:72px; min-height:90vh; background:linear-gradient(135deg,#667eea 0%,#764ba2 100%); color:#fff; display:flex; align-items:center; position:relative; overflow:hidden; }
+    .hero::before { content:""; position:absolute; inset:-25%; background:radial-gradient(circle, rgba(255,255,255,.12) 1px, transparent 1px); background-size:50px 50px; animation:moveBg 20s linear infinite; }
+    @keyframes moveBg { from{transform:translate(0,0)} to{transform:translate(50px,50px)} }
+    .hero-content { max-width:1200px; margin:0 auto; padding:4rem 2rem; position:relative; z-index:1; }
+    .hero h1 { font-size:3rem; font-weight:900; margin-bottom:.75rem; }
+    .hero-subtitle { font-size:1.25rem; margin-bottom:.5rem; opacity:.95; }
+    .hero-description { font-size:1.05rem; max-width:680px; opacity:.95; margin:1rem 0 1.5rem; }
+    .hero-cta { display:flex; gap:1rem; flex-wrap:wrap; }
+    .btn-primary { background:#fff; color:var(--primary); padding:1rem 1.25rem; border-radius:999px; text-decoration:none; font-weight:800; display:inline-block; }
+    .btn-primary:hover { transform:translateY(-3px); box-shadow:0 15px 30px rgba(0,0,0,.2); }
+    .btn-secondary { background:rgba(255,255,255,.2); color:#fff; padding:1rem 1.25rem; border-radius:999px; text-decoration:none; font-weight:800; border:2px solid #fff; }
+    .btn-secondary:hover { background:#fff; color:var(--primary); }
+
+    .trust-badge { margin-top:2rem; padding:1rem; background:rgba(255,255,255,.12); border-radius:14px; display:inline-block; }
+    .trust-logos { display:flex; gap:1rem; align-items:center; flex-wrap:wrap; }
+
+    /* Sections */
+    .container { max-width:1200px; margin:0 auto; padding:0 2rem; }
+    .section { padding:6rem 0; }
+    .section-title { text-align:center; font-size:2.25rem; font-weight:800; margin-bottom:.75rem; color:var(--dark); }
+    .section-subtitle { text-align:center; font-size:1.1rem; color:var(--text-light); max-width:760px; margin:0 auto 2.5rem; }
+
+    /* Problem */
+    .problem { background:var(--light); }
+    .problem-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; margin-top:2rem; }
+    .problem-card { background:#fff; padding:2rem; border-radius:18px; box-shadow:0 6px 24px rgba(0,0,0,.06); transition:.3s; }
+    .problem-card:hover { transform:translateY(-4px); box-shadow:0 14px 40px rgba(0,0,0,.09); }
+    .problem-icon { font-size:2rem; margin-bottom:.5rem; }
+
+    /* Solution */
+    .solution-visual { background:linear-gradient(135deg,var(--primary),var(--secondary)); border-radius:20px; padding:2rem; color:#fff; box-shadow:0 20px 60px rgba(102,126,234,.3); }
+    .solution-content { display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:center; margin-top:2rem; }
+    .chat-demo { background:rgba(255,255,255,.12); border-radius:14px; padding:1rem; }
+    .chat-message { background:rgba(255,255,255,.2); border-radius:10px; padding:.75rem; margin:.5rem 0; }
+    .solution-features { list-style:none; }
+    .solution-features li { padding:1rem 0; border-bottom:1px solid #eee; display:flex; gap:1rem; align-items:flex-start; }
+    .checkmark { color:var(--accent); font-size:1.25rem; font-weight:900; }
+
+    /* Features */
+    .features { background:var(--dark); color:#fff; }
+    .features-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.5rem; margin-top:2rem; }
+    .feature-card { text-align:center; padding:2rem; background:rgba(255,255,255,.06); border-radius:18px; transition:.3s; }
+    .feature-card:hover { background:rgba(255,255,255,.12); transform:translateY(-4px); }
+    .feature-icon { font-size:2.5rem; margin-bottom:1rem; }
+
+    /* Pricing */
+    .pricing { background:var(--light); }
+    .pricing-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.25rem; margin-top:2rem; }
+    .pricing-card { background:#fff; border-radius:20px; padding:2rem; box-shadow:0 6px 28px rgba(0,0,0,.08); transition:.3s; position:relative; }
+    .pricing-card:hover { transform:translateY(-6px); box-shadow:0 18px 60px rgba(0,0,0,.14); }
+    .pricing-card.featured { background:linear-gradient(135deg,var(--primary),var(--secondary)); color:#fff; transform:scale(1.02); }
+    .popular-badge { position:absolute; top:-14px; right:18px; background:var(--accent); color:#fff; padding:.4rem .75rem; border-radius:999px; font-size:.85rem; font-weight:800; }
+    .pricing-card h3 { font-size:1.4rem; margin-bottom:.5rem; }
+    .price { font-size:2.4rem; font-weight:900; margin:.25rem 0; }
+    .price span { font-size:1rem; font-weight:500; opacity:.85; }
+    .pricing-features { list-style:none; margin:1rem 0 1.25rem; }
+    .pricing-features li { padding:.55rem 0; border-bottom:1px solid rgba(0,0,0,.08); }
+    .pricing-card.featured .pricing-features li { border-bottom-color:rgba(255,255,255,.25); }
+    .pricing-cta { width:100%; padding:1rem; border-radius:999px; border:none; font-weight:800; cursor:pointer; }
+    .pricing-card:not(.featured) .pricing-cta { background:var(--primary); color:#fff; }
+    .pricing-card.featured .pricing-cta { background:#fff; color:var(--primary); }
+
+    /* Contact */
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-top:2rem; }
+    .contact-form { background:var(--light); padding:2rem; border-radius:18px; }
+    .form-group { margin-bottom:1rem; }
+    .form-group label { display:block; margin-bottom:.35rem; font-weight:700; color:var(--dark); }
+    .form-group input, .form-group textarea, .form-group select { width:100%; padding:1rem; border:2px solid #e5e7eb; border-radius:12px; font:inherit; transition:border-color .2s; background:#fff; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline:none; border-color:var(--primary); }
+    .submit-btn { width:100%; padding:1rem; background:linear-gradient(135deg,var(--primary),var(--secondary)); color:#fff; border:none; border-radius:999px; font-size:1.05rem; font-weight:800; cursor:pointer; }
+    .success-message { display:none; background:var(--accent); color:#fff; padding:1rem; border-radius:12px; margin-top:1rem; text-align:center; }
+    .success-message.show { display:block; }
+
+    /* Footer */
+    footer { background:var(--dark); color:#fff; padding:3rem 2rem 1.25rem; }
+    .footer-content { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:2rem; margin-bottom:2rem; }
+    .footer-about h3 { font-size:1.2rem; margin-bottom:.5rem; }
+    .footer-links h4 { margin-bottom:.5rem; }
+    .footer-links ul { list-style:none; }
+    .footer-links a { color:#fff; text-decoration:none; opacity:.85; }
+    .footer-links a:hover { opacity:1; }
+    .footer-bottom { text-align:center; padding-top:1rem; border-top:1px solid rgba(255,255,255,.12); opacity:.75; font-size:.95rem; }
+
+    /* WhatsApp Float */
+    .whatsapp-float { position:fixed; bottom:24px; right:24px; width:60px; height:60px; background:#25D366; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2rem; color:#fff; box-shadow:0 6px 24px rgba(37,211,102,.55); text-decoration:none; z-index:999; }
+    .whatsapp-float:hover { transform:scale(1.06); box-shadow:0 10px 30px rgba(37,211,102,.75); }
+
+    /* Responsive */
+    @media (max-width: 968px){
+      .nav-links { display:none; position:absolute; top:64px; right:16px; background:#fff; padding:1rem; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,.12); flex-direction:column; gap:1rem; min-width:200px; }
+      .nav-links.open { display:flex; }
+      .burger { display:flex; }
+      .hero h1 { font-size:2.2rem; }
+      .solution-content, .contact-grid, .footer-content { grid-template-columns:1fr; }
+      .pricing-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav aria-label="Primary">
+      <div class="logo" aria-label="Data Clicks">DATA CLICKS</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="cta-btn" aria-label="Get Started">Get Started</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false"><span></span></button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" role="banner">
+    <div class="hero-content">
+      <h1>Turn Customer Conversations<br/>Into Revenue – Automatically</h1>
+      <p class="hero-subtitle">AI Automation for UK Businesses</p>
+      <p class="hero-description">Stop wasting 10+ hours per week on repetitive customer messages. Our AI-powered WhatsApp chatbots handle bookings, queries, and support 24/7 – so you can focus on growing your business.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Book Free 15‑Min Demo</a>
+        <a href="#pricing" class="btn-secondary">See Pricing</a>
+      </div>
+      <div class="trust-badge" aria-label="Trusted sectors">
+        <p>Trusted by businesses in:</p>
+        <div class="trust-logos" aria-hidden="true">
+          <span>🏢 Greenwich</span><span>🍽️ Restaurants</span><span>🎨 Creative Studios</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="section problem" aria-labelledby="problem-title">
+    <div class="container">
+      <h2 class="section-title" id="problem-title">Sound Familiar?</h2>
+      <p class="section-subtitle">Most UK small businesses lose money every day dealing with these problems</p>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon" aria-hidden="true">😫</div>
+          <h3>Drowning in Messages</h3>
+          <p>WhatsApp, Instagram, Facebook – customer messages everywhere. You're spending hours replying to the same questions over and over.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon" aria-hidden="true">💸</div>
+          <h3>Lost Revenue</h3>
+          <p>Customers message at 11pm asking about bookings. You're asleep. They go to your competitor. You lose £50–£200 per missed opportunity.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon" aria-hidden="true">📊</div>
+          <h3>Manual Data Entry</h3>
+          <p>Copying customer details from WhatsApp to spreadsheets. Updating calendars. Sending confirmations. It's 2025 – this shouldn't be manual!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section class="section" aria-labelledby="solution-title">
+    <div class="container">
+      <h2 class="section-title" id="solution-title">Meet Your New AI Assistant</h2>
+      <p class="section-subtitle">See it in action – a real WhatsApp conversation with our AI</p>
+      <div class="solution-content">
+        <div class="solution-visual">
+          <h3>💬 Live Demo</h3>
+          <div class="chat-demo" aria-live="polite">
+            <div class="chat-message"><strong>Customer:</strong> "Hi, do you have availability for 4 people tomorrow at 7pm?"</div>
+            <div class="chat-message"><strong>AI Bot:</strong> "Hello! 👋 Yes, we have availability for 4 guests tomorrow at 19:00. May I have your name please?"</div>
+            <div class="chat-message"><strong>Customer:</strong> "Sarah Johnson"</div>
+            <div class="chat-message"><strong>AI Bot:</strong> "Perfect! Your table for 4 is booked for tomorrow at 19:00, Sarah. Confirmation sent to your WhatsApp. See you then! ✅"</div>
+          </div>
+          <p style="opacity:.95; font-size:.95rem; margin-top:.75rem;">⚡ Instant response | 📊 Auto‑saved to spreadsheet | 📧 Email to you</p>
+        </div>
+        <div>
+          <ul class="solution-features">
+            <li><span class="checkmark">✓</span><div><strong>24/7 Availability</strong><p>Never miss a customer again – AI responds instantly, even at 3am.</p></div></li>
+            <li><span class="checkmark">✓</span><div><strong>Automatic Bookings</strong><p>Takes reservations, checks availability, sends confirmations – all automatic.</p></div></li>
+            <li><span class="checkmark">✓</span><div><strong>Smart Integrations</strong><p>Connects to Google Sheets, Calendar, Email, CRM – everything synced.</p></div></li>
+            <li><span class="checkmark">✓</span><div><strong>Multi‑Language</strong><p>Speaks English, Turkish, Spanish, French – perfect for London's diversity.</p></div></li>
+            <li><span class="checkmark">✓</span><div><strong>Setup in 48 Hours</strong><p>No technical skills needed – we build, you approve, it goes live.</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section features" aria-labelledby="features-title">
+    <div class="container">
+      <h2 class="section-title" id="features-title" style="color:#fff;">Everything You Need to Automate</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,.85);">Built specifically for UK small businesses</p>
+      <div class="features-grid">
+        <div class="feature-card"><div class="feature-icon" aria-hidden="true">📱</div><h3>WhatsApp Business</h3><p>Official WhatsApp API integration. Professional business profile. Verified green tick.*</p></div>
+        <div class="feature-card"><div class="feature-icon" aria-hidden="true">🤖</div><h3>AI‑Powered Responses</h3><p>Context‑aware chatbot understands intent and sentiment. Natural conversations.</p></div>
+        <div class="feature-card"><div class="feature-icon" aria-hidden="true">📊</div><h3>Google Sheets</h3><p>Every booking, query, and customer detail automatically saved. Real‑time dashboards.</p></div>
+        <div class="feature-card"><div class="feature-icon" aria-hidden="true">📧</div><h3>Email Alerts</h3><p>Instant notifications for priority messages. Never miss urgent requests.</p></div>
+        <div class="feature-card"><div class="feature-icon" aria-hidden="true">🌍</div><h3>Multi‑Platform</h3><p>WhatsApp, Instagram, Facebook Messenger – all in one system.</p></div>
+        <div class="feature-card"><div class="feature-icon" aria-hidden="true">🎨</div><h3>Fully Customisable</h3><p>Your branding, your tone, your rules. We build exactly what you need.</p></div>
+      </div>
+      <p style="opacity:.75; margin-top:.75rem; font-size:.9rem;">*Green tick is subject to Meta approval criteria.</p>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section pricing" aria-labelledby="pricing-title">
+    <div class="container">
+      <h2 class="section-title" id="pricing-title">Simple, Transparent Pricing</h2>
+      <p class="section-subtitle">Start small, scale as you grow</p>
+      <div class="pricing-grid">
+        <article class="pricing-card" aria-label="Starter plan">
+          <h3>Starter</h3>
+          <p class="price">£149<span>/mo</span></p>
+          <ul class="pricing-features">
+            <li>WhatsApp chatbot (single flow)</li>
+            <li>Google Sheets logging</li>
+            <li>Email notifications</li>
+            <li>Basic FAQs (up to 30)</li>
+            <li>Email support</li>
+          </ul>
+          <button class="pricing-cta" data-plan="Starter">Start Starter</button>
+        </article>
+        <article class="pricing-card featured" aria-label="Growth plan">
+          <div class="popular-badge">Most Popular</div>
+          <h3>Growth</h3>
+          <p class="price">£349<span>/mo</span></p>
+          <ul class="pricing-features">
+            <li>Advanced AI (RAG + memory)</li>
+            <li>Bookings / Calendar integration</li>
+            <li>CRM / Email automation</li>
+            <li>Multi‑language</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="pricing-cta" data-plan="Growth">Start Growth</button>
+        </article>
+        <article class="pricing-card" aria-label="Pro plan">
+          <h3>Pro</h3>
+          <p class="price">Custom</p>
+          <ul class="pricing-features">
+            <li>Multiple channels (IG/FB/WhatsApp)</li>
+            <li>Team inbox & SLAs</li>
+            <li>Advanced analytics</li>
+            <li>Custom integrations</li>
+            <li>Onboarding & training</li>
+          </ul>
+          <button class="pricing-cta" data-plan="Pro">Talk to Sales</button>
+        </article>
+      </div>
+      <p style="margin-top:1rem; color:var(--text-light); font-size:.95rem;">Prices exclude VAT. Monthly rolling contract. Cancel anytime.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 class="section-title" id="contact-title">Book Your Free Demo</h2>
+      <p class="section-subtitle">Tell us a bit about your business and we'll tailor the demo</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">📍</div>
+            <div>
+              <h4>Based in London</h4>
+              <p>Greenwich & across the UK</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">📞</div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p><a id="waLinkText" href="#" rel="noopener" style="color:var(--primary); text-decoration:none;">Message us on WhatsApp</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">🗓️</div>
+            <div>
+              <h4>Calendar</h4>
+              <p><a id="calendlyLink" href="#" style="color:var(--primary); text-decoration:none;">Pick a time that suits you</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:hello@data-clicks.com" style="color:var(--primary); text-decoration:none;">hello@data-clicks.com</a></p>
+            </div>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form" method="post" action="https://formspree.io/f/your-endpoint" novalidate>
+          <div class="form-group">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Sarah Johnson" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Work email</label>
+            <input type="email" id="email" name="email" placeholder="sarah@company.co.uk" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" placeholder="+44 7xxx xxx xxx" />
+          </div>
+          <div class="form-group">
+            <label for="business">Business type</label>
+            <select id="business" name="business">
+              <option value="Restaurant">Restaurant</option>
+              <option value="Studio">Creative Studio</option>
+              <option value="Retail">Retail</option>
+              <option value="Services">Services</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">What would you like to automate?</label>
+            <textarea id="message" name="message" placeholder="Bookings, FAQs, lead capture, order updates..." minlength="10" required></textarea>
+          </div>
+          <input type="hidden" name="plan" id="selectedPlan" value="" />
+          <button type="submit" class="submit-btn">Request Demo</button>
+          <div id="successMsg" class="success-message" role="status" aria-live="polite">Thanks! We'll be in touch shortly.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-about">
+        <h3>Data Clicks</h3>
+        <p>AI automation for UK small businesses. WhatsApp chatbots, bookings, and workflow automation – delivered fast.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Service</a></li>
+          <li><a href="/cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Data Clicks. All rights reserved.</div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a id="waFloat" class="whatsapp-float" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Data Clicks",
+    "url": "https://data-clicks.com/",
+    "logo": "https://data-clicks.com/logo.png",
+    "sameAs": ["https://www.linkedin.com/company/data-clicks"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "London",
+      "addressRegion": "England",
+      "addressCountry": "UK"
+    }
+  }
+  </script>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    if (burger) {
+      burger.addEventListener('click', () => {
+        const open = navLinks.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+
+    // Pre-select plan from pricing CTA
+    const planInput = document.getElementById('selectedPlan');
+    document.querySelectorAll('.pricing-cta').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const plan = e.currentTarget.getAttribute('data-plan');
+        if (planInput) planInput.value = plan;
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // WhatsApp deep link (EDIT number & message!)
+    const whatsappNumber = '447000000000'; // e.g. 447123456789 (no +)
+    const defaultMsg = encodeURIComponent('Hi Data Clicks – I would like a 15‑min demo.');
+    const waHref = `https://wa.me/${whatsappNumber}?text=${defaultMsg}`;
+    const waFloat = document.getElementById('waFloat');
+    const waLinkText = document.getElementById('waLinkText');
+    if (waFloat) waFloat.href = waHref;
+    if (waLinkText) waLinkText.href = waHref;
+
+    // Calendly link (optional – replace with your scheduling URL)
+    const calendly = 'https://calendly.com/your-calendly/15min';
+    const calendlyLink = document.getElementById('calendlyLink');
+    if (calendlyLink) calendlyLink.href = calendly;
+
+    // Contact form (Formspree example)
+    const form = document.getElementById('contactForm');
+    const successMsg = document.getElementById('successMsg');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const action = form.getAttribute('action');
+        const data = new FormData(form);
+        try {
+          const res = await fetch(action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+          if (res.ok) {
+            form.reset();
+            if (successMsg) successMsg.classList.add('show');
+          } else {
+            alert('Something went wrong. Please email hello@data-clicks.com');
+          }
+        } catch (err) {
+          alert('Network error. Please try again later.');
+        }
+      });
+    }
+  </script>
+
+  <!-- Analytics placeholders (uncomment & replace IDs) -->
+  <!-- Google Analytics GA4
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXXX');
+  </script> -->
+
+  <!-- Microsoft Clarity (optional)
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/XXXXXXXX"; y=l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script");
+  </script> -->
+</body>
+</html>
